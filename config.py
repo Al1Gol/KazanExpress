@@ -2,7 +2,7 @@ import os
 
 query = 'вибратор' #Текст запроса
 table_id = '1KJBarCH76G2EyCPH7x6XyH2HK5QNfgKnkRerX73RFAM'  # ID текущего Google Sheet
-creds_json = os.path.dirname(__file__) + '\keys\creds.json' #Ссылка на ключ Google Sheet API
+creds_json = os.path.dirname(__file__) + '/keys/creds.json' #Ссылка на ключ Google Sheet API
 
 #Запросы для магазина
 list_headers = {
