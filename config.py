@@ -1,3 +1,10 @@
+import os
+
+query = 'вибратор' #Текст запроса
+table_id = '1KJBarCH76G2EyCPH7x6XyH2HK5QNfgKnkRerX73RFAM'  # ID текущего Google Sheet
+creds_json = os.path.dirname(__file__) + '\keys\creds.json' #Ссылка на ключ Google Sheet API
+
+#Запросы для магазина
 list_headers = {
     'authority': 'dshop.kznexpress.ru',
     'accept': '*/*',
@@ -38,12 +45,12 @@ products_headers = {
     'x-iid': '0a2bf1a1-1581-47f8-8b4a-6d0c3cbe0c9d',
 }
 
-def json_data(text, offset):
+def json_data(query, offset):
     return {
         'operationName': 'getMakeSearch',
         'variables': {
             'queryInput': {
-                'text': text,
+                'text': query,
                 'showAdultContent': 'TRUE',
                 'filters': [],
                 'sort': 'BY_RELEVANCE_DESC',

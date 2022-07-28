@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bionic-charge-353811",
+  "private_key_id": "5cfeb038638cf63f30d08a32dc07c516c91144c4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1IMommGGylB9A\nzYHp/NzzsN+Fw0i/fMqecoLOIK6yGr1gnSiGge7dKmz3esSH4FlHQJamplO1RC4g\nghIQweGDoB458XyGDm3VnDvAS2QYEWEXijExGc4ruDWmnrD7aRPPzzYLehfbU/Ut\nFIVn4Qeqh3QTTveHuMbM1pEitbzRNRigzIwO+DcFTueCb6e3b4V+Qnxj+NxsjpaX\nFRGvXBEhDFtQPdRxmriuODcAFO2wpSJRit66GBLAwZcr35o28uhWLW1w59sG02w+\nS8gM9XpYrypHJb4cWsishT29FVg7rUQz2SUriUAdGoMPEFz4Y+W8d3gxBmCFUhqR\n72wy7zFPAgMBAAECggEAVSQ9MihGIHIlQMp5i5qL6FdXsuKJs01/VzzfxPIy/FC6\nfYxSjOvN8xOq1ihU8sQgY3B2gI7F4XrTrf9Ga68fiUZ+fuFHliJ5OcSvh6RIwFGH\nENAqcHi/Y+i6+4A0FHIf2HsAXiO9zCEqqk6vqRVsC5qRkzP3Akr21Dn2TlkckUA4\nRmT4JuPlba4wOfOv+eMGlCQCyCyf4uLmeu9dRGbIygLj6NWEkHZq947CPdjBsAZw\nFTW/dUqKa1bpIsqbAVCQreNDYOcAdIUrD2j/64n9K68QU3D/0muEt1oU3bz/Kmvz\nYfTJDvBQR9mlKyXl/jRsW5N6UpaooZCzblrW4Ko12QKBgQDZ+2kUQpdR81ZRN6Ki\nh0vVzoEHd4XgiRxBKmncHThg/rBrWn0xDtTs7VmLf7C7vO/h5sbMjxiSS6NJQ45S\nx18jSwYrk3aopQAqh5KCwk3+43zf3ap9PFLkSt5PM2e5qZ5JebiHdAz6Hj370+ex\nn7uzNVpDtPdas1jQUrd4u/AitwKBgQDUt+arQkAXxLqu2M0+x4ivfWjB042pmFfb\n/ibwN9Ss8vUwl8BJMKFx1xFjGsCp5B4Wv/PTpuliFe8DP9Xx1ww8FoJk74rOF++4\nwdAVNcOI7DBIo0hcdvtsA1xl7qpzMYARGBHfx2M3lsN0/yTamILhj1iwOR9QAmr+\nsUuLPuluKQKBgBaDqiHGkvyK5qJy3aBt2v5VWuxbgv9jCgENEWwDtJwIEk60RPP5\nNTLXfQU0hhuN8zTg8i2UphQOLepWSO/x2bi6egOsMnhOuoqqAA7zZLzr4Cz7Jy3S\nOjmMJhQGGjOJ+mhaYx3SdbirwPkutOKavfdPjmgp29aJaaXytTKKLs5XAoGBANAB\naFFtPik/2WDiZYkPKqyYEFkAmpUNgFSB6OebYJ8iEPrMWV34bNZZ/QmQ/nbitz19\nxFrh63NbiVX/FSEgLTmQtT8oMe4n3+UluGkVIriAZRKSgE7SljZf7vlJ8WklLVsJ\n02ikm3OfPE/qssoCunEAcDQaF3Fwe9nD2uA1y6NJAoGAcrFW09gVWUlc/RwlmuM5\nGCYHDOgwnDVkDk2POUKwlyFGwoOY4FqhRTP/AW9wLAJmv4qAK0gtYh2WgTccr14L\nsfr8KaEntjgAJV8vAzYvIknHp7aUpAJOs1i2RKZasSXn7ISoJ2A6P9Rh/A7xe+F6\nZtmdeV/YgyRzm4KalxCwC4s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "al1gol@bionic-charge-353811.iam.gserviceaccount.com",
+  "client_id": "100469095440262382412",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/al1gol%40bionic-charge-353811.iam.gserviceaccount.com"
+}
