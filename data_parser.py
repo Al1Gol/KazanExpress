@@ -4,8 +4,8 @@ import os
 
 import requests
 
-from config import json_data, list_headers, products_headers
-
+from config import json_data, list_headers, products_headers, query
+from get_url import get_urls
 
 def get_data(query):
 
@@ -32,7 +32,10 @@ def get_data(query):
 
     pages_count = math.ceil(total_items / 48)  # Вычисляем число страниц
 
+    products_urls = get_urls(pages_count)
+
     products_id = []  # Список id товаров
+    
     # Получаем id товаров
     for i in range(pages_count):
         offset = i * 48
@@ -50,32 +53,29 @@ def get_data(query):
     # with open('.\data\id.json', 'w', encoding='utf-8') as file:
     #    json.dump(products_id, file, indent=4, ensure_ascii=False)
 
-    num = 1  # Порядковый номер заказа
     data = []  # Список с необходимыми полями товаров
 
+    print(f'product_id = {products_id}')
     # Получаем с сайта нужные поля
-    for id in products_id:
+    for i in range (len(products_id)):
+        print(i)
         response = session.get(
-            f'https://api.kazanexpress.ru/api/v2/product/{id}',
+            f'https://api.kazanexpress.ru/api/v2/product/{products_id[i]}',
             headers=products_headers).json()
         title = response.get('payload').get('data').get('title')
         seller = response.get('payload').get('data').get('seller').get('title')
         rating = response.get('payload').get('data').get('rating')
         orders = response.get('payload').get('data').get('rOrdersAmount')
 
-        data.append(['', seller, title, num, rating, orders])
-        num += 1
+        data.append([products_urls[i], seller, title, i+1, rating, orders])
 
     products_info = {
         'query': query,
         'data': data
     }
 
-    # with open('.\data\data.json', 'w', encoding='utf-8') as file:
-    #    json.dump(products_info, file, indent=4, ensure_ascii=False)
-
     return products_info
 
 
 if __name__ == '__main__':
-    get_data()
+    result =  get_data(query[0])

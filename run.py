@@ -1,4 +1,5 @@
 import json
+import time
 
 import googleapiclient.discovery
 import httplib2
@@ -204,8 +205,9 @@ def write_sheet(query):
 
 def main():
     for item in query:
+        start_time = time.time()
         write_sheet(item)
-
+        print("--- %s seconds ---" % (time.time() - start_time))
 
 if "__main__" == __name__:
     main()
