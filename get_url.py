@@ -9,7 +9,7 @@ def get_urls(pages_count):
         url = f'https://kazanexpress.ru/search?query=%D0%B2%D0%B8%D0%B1%D1%80%D0%B0%D1%82%D0%BE%D1%80&currentPage={i+1}'
         options = webdriver.ChromeOptions()
         options.add_argument('--headless')
-        driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver', options=options)
+        driver = webdriver.Chrome(executable_path='./chromedriver/chromedriver', options=options)
         driver.maximize_window()
 
         try:
@@ -28,6 +28,6 @@ def get_urls(pages_count):
     return links_dict
 
 if "__main__" == __name__:
-    result = get_urls(2)
+    result = get_urls(1)
     print(result)
     print(len(result))

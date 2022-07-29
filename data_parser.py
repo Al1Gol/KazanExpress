@@ -55,10 +55,8 @@ def get_data(query):
 
     data = []  # Список с необходимыми полями товаров
 
-    print(f'product_id = {products_id}')
     # Получаем с сайта нужные поля
     for i in range (len(products_id)):
-        print(i)
         response = session.get(
             f'https://api.kazanexpress.ru/api/v2/product/{products_id[i]}',
             headers=products_headers).json()

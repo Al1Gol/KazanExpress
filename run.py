@@ -175,6 +175,13 @@ def write_sheet(query):
                     "fields": "pixelSize",
                 }
             },
+                        {
+            "updateDimensionProperties": {
+                    "range": {"sheetId": sheet_id, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 1},
+                    "properties": {"pixelSize": 300},
+                    "fields": "pixelSize",
+                }
+            },
         ]
     }
     for item in shop_row:
@@ -205,9 +212,9 @@ def write_sheet(query):
 
 def main():
     for item in query:
-        start_time = time.time()
+        #start_time = time.time()
         write_sheet(item)
-        print("--- %s seconds ---" % (time.time() - start_time))
+        #print("--- %s seconds ---" % (time.time() - start_time))
 
 if "__main__" == __name__:
     main()
